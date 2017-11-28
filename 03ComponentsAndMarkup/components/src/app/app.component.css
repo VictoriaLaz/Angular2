@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+}
+
+.left{
+    height: 200px;
+    background: red;
+}
+.right{
+    height: 200px;
+    background: green;
+}
