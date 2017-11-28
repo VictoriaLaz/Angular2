@@ -19,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "com",
       "styles": [
-        "styles.css"
+        "styles.css", "bootstrap.min.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
