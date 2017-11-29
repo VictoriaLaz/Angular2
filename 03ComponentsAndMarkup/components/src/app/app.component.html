@@ -1,7 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
-  <div class="col-md-6 left">hello</div>
-  <div class="col-md-6 right">hello</div>
-  
-</div>
+  <div class="col-md-6 left">
+    <com-headers (selection) = "getDetails($event)" *ngFor="let article of data" [incommingArticle] = 'article'>
+      
+    </com-headers>
+  </div>
 
+  <div *ngIf="selectedArticle" class="col-md-6 right">
+    <com-article (articleId) = "deleteArticle($event)"[article]="selectedArticle"></com-article>
+  </div>
+
+</div>
